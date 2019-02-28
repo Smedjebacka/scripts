@@ -1,0 +1,11 @@
+#!/bin/sh
+MERGE_INTO=`git rev-parse --abbrev-ref HEAD`
+MERGE_FROM=$@
+git checkout $MERGE_FROM
+LINES=`git grep -F "NORELEASE"`
+if [ -n "$LINES" ]; then
+	echo "$LINES"
+else
+	git checkout $MERGE_INTO
+	git merge $MERGE_FROM
+fi
