@@ -2,7 +2,7 @@
 
 Some bash scripts that generally iterate child folders that are git repos, and do stuff in those git repos.
 
-**git-grep-all**: do a 'git grep' in each repo. `git grep` is insanely fast.
+**git-grep-all**: do a `git grep` in each repo. `git grep` is insanely fast and honors `.gitignore`.
 
 **git-find-remote-branches**: quickly find repos that contain a remote branch that matches a pattern.
 
