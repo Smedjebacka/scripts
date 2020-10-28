@@ -4,7 +4,9 @@ Some bash scripts that generally iterate child folders that are git repos, and d
 
 # Instructions
 
-In folder where shell script is located, do:
+Place the script in a parent folder that contains many git repos.
+
+Cd to the parent folder, and do:
 ```
 ./git-grep-all.sh MySearchString
 ```
