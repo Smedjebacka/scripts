@@ -1,3 +1,10 @@
+# What is this?
+A script that is meant to be used instead of the `git merge` command. The script aborts the merge if any file contains the text "NORELEASE". I used to put a comment in files that contained particularly dangerous local changes that were absolutely not meant to slip into master.
+
+# Kind of deprecated
+I don't use this script any more. I don't know why, it seems like I scan through staged changes / PR:s so thoroughly that I have never forgot to delete a NORELEASE-tagged change.
+
+# Description
 The git-mnr file is a bash script that runs when you
 $ git mnr
 
